@@ -222,8 +222,6 @@ registrar.addEventListener("click", () => {
         manager.registrarPartida(time1, time2, Number(gols1), Number(gols2));
         document.querySelector("#gols1").value = "";
         document.querySelector("#gols2").value = "";
-        const paragraf = document.querySelector("#menssagem")
-        paragraf.textContent = ("PARTIDA REGISTRADA")
     }
     manager.atualizarClassificacao();
 });
