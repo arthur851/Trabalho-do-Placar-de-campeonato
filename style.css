@@ -1,0 +1,250 @@
+/* ===== RESET ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background:#dcdcdc;
+    color:#222;
+}
+
+/* ===== CABEÇALHO ===== */
+
+.container{
+    background:linear-gradient(135deg,#6d071a,#0b2545);
+    color:white;
+    box-shadow:0 4px 15px rgba(0,0,0,.3);
+}
+
+header{
+    padding:30px;
+    text-align:center;
+}
+
+header h1{
+    font-size:2.2rem;
+    letter-spacing:2px;
+}
+
+/* ===== MENU ===== */
+
+.menu{
+    background:#0b2545;
+}
+
+#menu{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    flex-wrap:wrap;
+}
+
+#menu li{
+    transition:.3s;
+}
+
+#menu li:hover{
+    background:#6d071a;
+}
+
+#menu a{
+    display:block;
+    padding:18px 28px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+#menu a:hover{
+    color:#dcdcdc;
+}
+
+/* ===== MAIN ===== */
+
+main{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:60px;
+}
+
+/* As seções continuam escondidas por padrão */
+main section{
+    display:none;
+    width:100%;
+    background:white;
+    padding:35px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+section h1{
+    text-align:center;
+    color:#6d071a;
+    margin-bottom:25px;
+    border-bottom:3px solid #0b2545;
+    display:inline-block;
+    padding-bottom:8px;
+}
+
+/* ===== FORMULÁRIOS ===== */
+
+form{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+input,
+select{
+    padding:12px;
+    border:2px solid #6d071a;
+    border-radius:8px;
+    font-size:16px;
+    outline:none;
+    transition:.3s;
+}
+
+input:focus,
+select:focus{
+    border-color:#0b2545;
+    box-shadow:0 0 8px rgba(11,37,69,.3);
+}
+
+button{
+    padding:12px 22px;
+    background:#6d071a;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#0b2545;
+    transform:translateY(-2px);
+}
+
+/* ===== REGISTRAR PARTIDA ===== */
+
+.conteiner{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.box{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+#menssagem{
+    align-self: center;
+    justify-self: center;
+    color: rgb(95, 143, 22);
+}
+/* ===== TABELAS ===== */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+    overflow:hidden;
+    border-radius:10px;
+}
+
+th{
+    background:#6d071a;
+    color:white;
+    padding:14px;
+    text-align:center;
+}
+
+td{
+    padding:12px;
+    text-align:center;
+}
+
+th,
+td{
+    border:1px solid #c0c0c0;
+}
+
+tr:nth-child(even){
+    background:#efefef;
+}
+
+tr:hover{
+    background:#d8e6ff;
+    transition:.2s;
+}
+.lider{
+    color:rgb(21, 255, 0);
+    background-color: black;
+    font-weight:bold;
+}.lanterna{
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+}
+/* ===== SCROLL PARA TABELAS GRANDES ===== */
+
+.tabela{
+    display:block;
+    overflow-x:auto;
+    white-space:nowrap;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+
+@media(max-width:900px){
+
+    header h1{
+        font-size:1.8rem;
+    }
+
+    #menu{
+        flex-direction:column;
+    }
+
+    #menu a{
+        text-align:center;
+    }
+
+    .conteiner{
+        flex-direction:column;
+    }
+
+    .box{
+        width:100%;
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    form{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    input,
+    select,
+    button{
+        width:100%;
+        max-width:400px;
+    }
+
+}
